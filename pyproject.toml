@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "blender"
+version = "0.1.0"
+description = "Turn any song into categorized musical samples with a .perf.json config."
+requires-python = ">=3.10"
+dependencies = [
+    "demucs",
+    "librosa",
+    "soundfile",
+    "numpy",
+]
+
+[project.scripts]
+blender = "blender.__main__:main"
