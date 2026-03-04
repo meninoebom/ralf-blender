@@ -14,10 +14,10 @@ pip install -e .
 
 ```bash
 blender song.mp3
-blender song.mp3 --bpm 120 --stems drums,bass --verbose
+blender song.mp3 --output-dir ~/my-samples --bpm 120 --stems drums,bass --verbose
 ```
 
-Output: a `samples/` directory with categorized WAV files and a `.perf.json` config.
+Output goes to the **current working directory** by default (like most CLI tools). Use `--output-dir` to write elsewhere. Creates a `samples/` directory with categorized WAV files and a `.perf.json` config.
 
 ## Categories
 
