@@ -13,3 +13,11 @@ output/
 samples/
 *.perf.json
 .DS_Store
+
+# Source audio stays local
+*.wav
+*.m4a
+*.mp3
+samples/
+__pycache__/
+*.egg-info/
